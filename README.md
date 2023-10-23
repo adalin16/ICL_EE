@@ -1,7 +1,7 @@
 
 # Impact of Sample Selection on In-Context Learning for Entity Extraction from Scientific Writing
 
-This repositury provides the system used in our work for in-context learning (ICL) sample selection methods for scientific entity extraction task.
+This repository provides the system used in our work for in-context learning (ICL) sample selection methods for scientific entity extraction task.
 
 ## Installation
 
@@ -73,7 +73,7 @@ python icl_sample.py \
 
 #### Evaluation
 ```
-python icl_evaluation.py \
+python icl_evaluate.py \
     --data --metric \
     --icl_file_name \
     --model \
