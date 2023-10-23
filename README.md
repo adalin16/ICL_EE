@@ -15,20 +15,20 @@ pip install datasets
 ```
 
 
-## datasets
+## Datasets
 
 We use five scientific entity extraction datasets.
 - ADE
 - MeasEval
 - SciERC
-- Stem-SciERC
+- STEM-ECR
 - WLPC
 
 ## Results
 
 ### Main Results
 
-| **Method**                          	| **ADE** 	| **MeasEval** 	| **SciERC** 	| **STEM** 	| **WLPC** 	|
+| **Method**                          	| **ADE** 	| **MeasEval** 	| **SciERC** 	| **STEM-ECR** 	| **WLPC** 	|
 |-------------------------------------	|---------	|--------------	|------------	|----------	|----------	|
 | Baseline Models                     	|         	|              	|            	|          	|          	|
 | RoBERTa                             	| **90.42**   	| **56.68**        	| **68.52**      	| **69.70**    	| 28.36    	|
@@ -41,8 +41,8 @@ We use five scientific entity extraction datasets.
 | Influence                           	| 86.35   	| 27.13        	| 36.47      	| 27.81    	| **45.41**    	|
 
 
-### Low-Resource Scneario
-| **Method**                          	| **ADE** 	| **MeasEval** 	| **SciERC** 	| **STEM** 	| **WLPC** 	|
+### Low-Resource Scenario
+| **Method**                          	| **ADE** 	| **MeasEval** 	| **SciERC** 	| **STEM-ECR** 	| **WLPC** 	|
 |-------------------------------------	|---------	|--------------	|------------	|----------	|----------	|
 | RoBERTa full                            	| 90.42   	| 56.68        	| 68.52      	| 69.70    	| 28.36    	|
 | Baseline Models                     	|         	|              	|            	|          	|          	|
@@ -57,7 +57,7 @@ We use five scientific entity extraction datasets.
 
 ## Running Experiments
 
-#### Sample Selection
+### Sample Selection
 ```
 python icl_sample.py \
     --data \
@@ -71,7 +71,7 @@ python icl_sample.py \
 
 ```
 
-#### Evaluation
+### Evaluation
 ```
 python icl_evaluate.py \
     --data --metric \
